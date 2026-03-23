@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisis Layanan *858#</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body class="flex flex-col items-center justify-center min-h-screen bg-black antialiased p-4 md:p-8">
+    
+    <div id="main-view" class="flex flex-col w-full items-center gap-8 transition-opacity duration-300">
+        <section class="flex flex-col justify-center items-center space-y-6 border border-gray-800 p-8 md:px-24 md:py-32 w-full max-w-6xl">
+            
+            <div class="bg-white text-center p-8 md:p-16 rounded-md w-full max-w-4xl">
+                <h1 class="text-4xl md:text-6xl font-bold">ANALISIS LAYANAN *858#</h1>
+                <p class="text-base md:text-lg mt-4">by Hapis Supremacy</p>
+            </div>
+
+            <h2 class="text-white text-xl md:text-2xl text-center">
+                A Computer Network Assignment Project.
+            </h2>
+
+            <div class="flex flex-col sm:flex-row gap-4 sm:space-x-2 text-lg w-full sm:w-auto mt-4">
+                <a href="#" class="w-full sm:w-auto"><button class="w-full border border-gray-500 text-white px-8 py-2 rounded-md hover:bg-gray-800 transition">About</button></a>
+                <button onclick="showDemo()" class="w-full sm:w-auto px-8 py-2 bg-white text-black rounded-md hover:bg-gray-200 transition cursor-pointer">Start Demo</button>
+            </div>
+
+        </section>
+
+        <section class="flex flex-col xl:flex-row items-center xl:items-start justify-center gap-12 border border-gray-800 p-8 md:px-20 md:py-12 w-full max-w-6xl">
+            
+            <div id="profile-title" class="w-full text-left flex flex-col justify-center items-start gap-8 xl:w-1/3 xl:sticky xl:top-12">
+                <h2 class="text-white text-4xl md:text-5xl font-bold leading-tight">The People <br class="hidden xl:block"> in Charge</h2>
+                
+                <p class="text-gray-300 text-lg leading-relaxed">"Great websites aren't built by a single mind, but by the seamless collaboration of a dedicated team."</p>
+                
+                <div class="w-full">
+                    <button class="bg-white text-black px-8 py-3 rounded-md hover:bg-gray-200 transition text-lg">Meet the Team</button>
+                    <p class="text-gray-600 mt-2 text-sm">*buttonnya cuman gimmick doang :></p>
+                </div>
+            </div>
+            
+            <div id="card-section" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full xl:w-2/3">
+                <div class="p-4 border border-gray-600 flex flex-col items-center sm:items-start hover:border-gray-400 transition duration-300">
+                    <img src="images/why-do-some-people-even-want-to-be-like-ayanokoji-v0-pyrpkeav3und1.webp" class="w-full aspect-[4/5] object-cover" alt="M. Hafiz">
+                    <h3 class="text-xl md:text-2xl font-bold text-white mt-4">M. Hafiz</h3>
+                    <p class="text-gray-400 mt-1">Project Manager</p>
+                </div>
+
+                <div class="p-4 border border-gray-600 flex flex-col items-center sm:items-start hover:border-gray-400 transition duration-300">
+                    <img src="images/why-do-some-people-even-want-to-be-like-ayanokoji-v0-pyrpkeav3und1.webp" class="w-full aspect-[4/5] object-cover" alt="Dzalfaga D.">
+                    <h3 class="text-xl md:text-2xl font-bold text-white mt-4">Dzalfaga D.</h3>
+                    <p class="text-gray-400 mt-1">UI/UX Designer</p>
+                </div>
+
+                <div class="p-4 border border-gray-600 flex flex-col items-center sm:items-start hover:border-gray-400 transition duration-300">
+                    <img src="images/why-do-some-people-even-want-to-be-like-ayanokoji-v0-pyrpkeav3und1.webp" class="w-full aspect-[4/5] object-cover" alt="Nabil Hilmi">
+                    <h3 class="text-xl md:text-2xl font-bold text-white mt-4">Nabil Hilmi</h3>
+                    <p class="text-gray-400 mt-1">Front-end Developer</p>
+                </div>
+                
+                <div class="p-4 border border-gray-600 flex flex-col items-center sm:items-start hover:border-gray-400 transition duration-300">
+                    <img src="images/why-do-some-people-even-want-to-be-like-ayanokoji-v0-pyrpkeav3und1.webp" class="w-full aspect-[4/5] object-cover" alt="Haidar Z.">
+                    <h3 class="text-xl md:text-2xl font-bold text-white mt-4">Haidar Z.</h3>
+                    <p class="text-gray-400 mt-1">Back-end Developer</p>
+                </div>
+
+                <div class="p-4 border border-gray-600 flex flex-col items-center sm:items-start hover:border-gray-400 transition duration-300">
+                    <img src="images/why-do-some-people-even-want-to-be-like-ayanokoji-v0-pyrpkeav3und1.webp" class="w-full aspect-[4/5] object-cover" alt="Daffa U.">
+                    <h3 class="text-xl md:text-2xl font-bold text-white mt-4">Daffa U.</h3>
+                    <p class="text-gray-400 mt-1">Back-end Developer</p>
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+    <div id="demo-view" class="hidden w-full flex-col items-center transition-opacity duration-300">
+        
+        <section class="flex flex-col items-center justify-center gap-8 border border-gray-800 p-8 md:px-20 md:py-16 w-full max-w-6xl relative">
+            
+            <button onclick="hideDemo()" class="absolute top-6 left-6 md:top-8 md:left-8 text-gray-400 hover:text-white flex items-center gap-2 transition cursor-pointer">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+                Back to Home
+            </button>
+        
+            <div class="text-center w-full max-w-2xl mt-8 md:mt-0">
+                <h2 class="text-white text-3xl md:text-4xl font-bold mb-4">Live Interactive Demo</h2>
+                <p class="text-gray-400 text-lg">Coba simulasi layanan USSD *858# langsung dari browser Anda.</p>
+            </div>
+
+            <div class="border-4 border-gray-700 bg-gray-900 rounded-[3rem] p-4 w-full max-w-[350px] shadow-2xl relative overflow-hidden">
+                <div class="bg-black w-full h-[500px] rounded-[2rem] border border-gray-800 flex flex-col relative">
+                    
+                    <div class="flex justify-between items-center px-6 py-2 text-xs text-white font-medium">
+                        <span>12:00</span>
+                        <div class="flex space-x-2">
+                            <span>LTE</span>
+                            <span>100%</span>
+                        </div>
+                    </div>
+
+                    <div id="ussd-dialog" class="hidden absolute inset-0 bg-black bg-opacity-80 flex items-center justify-center p-4 z-10">
+                        <div class="bg-gray-800 w-full rounded-lg p-4 shadow-lg border border-gray-600">
+                            <p id="ussd-text" class="text-white font-mono text-sm whitespace-pre-line mb-4 leading-relaxed"></p>
+                            <input type="text" id="ussd-input" class="w-full bg-black text-white border border-green-500 rounded p-2 mb-4 focus:outline-none focus:ring-1 focus:ring-green-500 font-mono" placeholder="Masukkan pilihan..." autocomplete="off">
+                            <div class="flex justify-end space-x-4 text-sm font-bold">
+                                <button onclick="closeUssd()" class="text-gray-400 hover:text-white transition cursor-pointer">CANCEL</button>
+                                <button onclick="handleUssdSubmit()" class="text-green-400 hover:text-green-300 transition cursor-pointer">SEND</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex-1 flex flex-col items-center justify-end pb-8 px-8">
+                        <input type="text" id="dial-input" value="*858#" class="bg-transparent text-white text-4xl text-center w-full font-bold mb-12 focus:outline-none" readonly>
+                        
+                        <button onclick="startUssd()" class="bg-green-500 hover:bg-green-600 transition text-white w-16 h-16 rounded-full flex items-center justify-center shadow-lg shadow-green-500/30 cursor-pointer">
+                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+<script>
+    // View Toggling Logic
+    const mainView = document.getElementById('main-view');
+    const demoView = document.getElementById('demo-view');
+
+    function showDemo() {
+        // Hide Main View
+        mainView.classList.add('hidden');
+        mainView.classList.remove('flex');
+        
+        // Show Demo View
+        demoView.classList.remove('hidden');
+        demoView.classList.add('flex');
+        
+        // Ensure scroll resets to top of demo
+        window.scrollTo(0, 0);
+    }
+
+    function hideDemo() {
+        // Hide Demo View
+        demoView.classList.add('hidden');
+        demoView.classList.remove('flex');
+        
+        // Show Main View
+        mainView.classList.remove('hidden');
+        mainView.classList.add('flex');
+        
+        // Optional: Reset the phone simulator if they leave it halfway
+        closeUssd();
+        window.scrollTo(0, 0);
+    }
+
+    // USSD Simulator Logic
+    let ussdState = 0;
+    let transferData = { number: '', amount: '' };
+
+    const dialog = document.getElementById('ussd-dialog');
+    const ussdText = document.getElementById('ussd-text');
+    const ussdInput = document.getElementById('ussd-input');
+    const dialInput = document.getElementById('dial-input');
+
+    function startUssd() {
+        if(dialInput.value === '*858#') {
+            dialog.classList.remove('hidden');
+            ussdState = 1;
+            renderMenu();
+        } else {
+            alert('Silakan ketik *858# untuk memulai simulasi.');
+        }
+    }
+
+    function closeUssd() {
+        dialog.classList.add('hidden');
+        ussdInput.value = '';
+        ussdState = 0;
+        transferData = { number: '', amount: '' };
+        ussdInput.style.display = 'block'; // Reset display just in case
+    }
+
+    function renderMenu() {
+        ussdInput.value = '';
+        ussdInput.focus();
+        
+        switch(ussdState) {
+            case 1:
+                ussdText.innerText = "Mau Transfer Pulsa?\n1. Transfer Pulsa\n2. Minta Pulsa\n3. Auto TP\n4. Delete Auto TP\n5. Cek Status";
+                ussdInput.style.display = 'block';
+                break;
+            case 2:
+                ussdText.innerText = "Silahkan masukkan nomor tujuan Transfer Pulsa:\n(contoh: 081234567890)";
+                break;
+            case 3:
+                ussdText.innerText = "Silahkan masukkan jumlah pulsa yang akan ditransfer:\n(min 5000, max 1000000)";
+                break;
+            case 4:
+                ussdText.innerText = `Hati-hati penipuan! Anda akan transfer pulsa Rp${transferData.amount} ke ${transferData.number}?\nBiaya mulai Rp1.850 & +1 Poin.\n1. Ya\n9. Back`;
+                break;
+            case 5:
+                ussdText.innerText = "Terima kasih permintaan Anda sedang diproses. Tunggu SMS notifikasi selanjutnya.";
+                ussdInput.style.display = 'none'; // Hide input on success
+                break;
+            default:
+                ussdText.innerText = "Kode MMI Tidak Berlaku.";
+        }
+    }
+
+    function handleUssdSubmit() {
+        const input = ussdInput.value.trim();
+
+        if (ussdState === 1 && input === '1') {
+            ussdState = 2;
+        } else if (ussdState === 2 && input.length >= 10) {
+            transferData.number = input;
+            ussdState = 3;
+        } else if (ussdState === 3 && parseInt(input) >= 5000) {
+            transferData.amount = input;
+            ussdState = 4;
+        } else if (ussdState === 4 && input === '1') {
+            ussdState = 5;
+        } else if (ussdState === 4 && input === '9') {
+            ussdState = 1; // Back to main menu
+        } else if (ussdState === 5) {
+            closeUssd();
+            return;
+        } else {
+            ussdText.innerText = "Input salah atau format tidak sesuai. Menghentikan sesi.";
+            ussdInput.style.display = 'none';
+            setTimeout(closeUssd, 2500);
+            return;
+        }
+        
+        renderMenu();
+    }
+
+    // Submit using Enter key
+    ussdInput.addEventListener("keypress", function(event) {
+        if (event.key === "Enter") {
+            event.preventDefault();
+            handleUssdSubmit();
+        }
+    });
+</script>
+    
+</body>
+</html>

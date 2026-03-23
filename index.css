@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url(helvetica-neue/HelveticaNeueRoman.otf);
+}
+
+@font-face {
+    font-family: 'Helvetica Neue Bold';
+    src: url(helvetica-neue/HelveticaNeueBold.otf);
+}
+* {
+    font-family: 'Poppins', sans-serif;
+}
