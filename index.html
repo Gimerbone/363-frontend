@@ -125,38 +125,38 @@
     </div>
 
 <script>
-    // View Toggling Logic
+    // logic hide dan show wew
     const mainView = document.getElementById('main-view');
     const demoView = document.getElementById('demo-view');
 
     function showDemo() {
-        // Hide Main View
+        // hide main
         mainView.classList.add('hidden');
         mainView.classList.remove('flex');
         
-        // Show Demo View
+        // show demo
         demoView.classList.remove('hidden');
         demoView.classList.add('flex');
         
-        // Ensure scroll resets to top of demo
+        // reset scroll psoition
         window.scrollTo(0, 0);
     }
 
     function hideDemo() {
-        // Hide Demo View
+        // hide demo
         demoView.classList.add('hidden');
         demoView.classList.remove('flex');
         
-        // Show Main View
+        // show main
         mainView.classList.remove('hidden');
         mainView.classList.add('flex');
         
-        // Optional: Reset the phone simulator if they leave it halfway
+        // reset simulator kalau gajadi tengah jalan
         closeUssd();
         window.scrollTo(0, 0);
     }
 
-    // USSD Simulator Logic
+    // ussd main logic wakwaw
     let ussdState = 0;
     let transferData = { number: '', amount: '' };
 
@@ -180,7 +180,7 @@
         ussdInput.value = '';
         ussdState = 0;
         transferData = { number: '', amount: '' };
-        ussdInput.style.display = 'block'; // Reset display just in case
+        ussdInput.style.display = 'block'; // reset displaynya bisi bermasalah
     }
 
     function renderMenu() {
@@ -203,7 +203,7 @@
                 break;
             case 5:
                 ussdText.innerText = "Terima kasih permintaan Anda sedang diproses. Tunggu SMS notifikasi selanjutnya.";
-                ussdInput.style.display = 'none'; // Hide input on success
+                ussdInput.style.display = 'none'; // kalo sukses sembunyiin input
                 break;
             default:
                 ussdText.innerText = "Kode MMI Tidak Berlaku.";
@@ -224,7 +224,7 @@
         } else if (ussdState === 4 && input === '1') {
             ussdState = 5;
         } else if (ussdState === 4 && input === '9') {
-            ussdState = 1; // Back to main menu
+            ussdState = 1; // balik ke main menu yeee
         } else if (ussdState === 5) {
             closeUssd();
             return;
@@ -238,7 +238,7 @@
         renderMenu();
     }
 
-    // Submit using Enter key
+    // ini submit woi
     ussdInput.addEventListener("keypress", function(event) {
         if (event.key === "Enter") {
             event.preventDefault();
