@@ -4,96 +4,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Analisis Layanan *858#</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
     <link rel="stylesheet" href="index.css">
 </head>
 <body class="flex flex-col items-center justify-center min-h-screen bg-black antialiased p-4 md:p-8">
     
     <div id="main-view" class="flex flex-col w-full items-center gap-8 transition-opacity duration-300">
-        <section class="flex flex-col justify-center items-center space-y-6 border border-gray-800 p-8 md:px-24 md:py-32 w-full max-w-6xl">
+        <section class="flex flex-col justify-center items-center space-y-8 border border-gray-800 p-8 md:px-24 md:py-32 w-full max-w-6xl">
             
-            <div class="bg-white text-center p-8 md:p-16 rounded-md w-full max-w-4xl">
-                <h1 class="text-4xl md:text-6xl font-bold">ANALISIS LAYANAN *858#</h1>
-                <p class="text-base md:text-lg mt-4">by Hapis Supremacy</p>
+            <div class="text-center w-full max-w-5xl">
+                <h1 class="text-5xl md:text-7xl font-bold tracking-tighter text-white">Analisis Layanan *858#</h1>
+                <p class="text-xl md:text-2xl mt-4 tracking-tight text-gray-400">by Hapis Supremacy</p>
             </div>
 
-            <h2 class="text-white text-xl md:text-2xl text-center">
-                A Computer Network Assignment Project.
+            <h2 class="text-gray-300 text-xl md:text-2xl text-center tracking-tight max-w-2xl">
+                Tugas Implementasi dan Pengujian Perangkat Lunak.
             </h2>
 
-            <div class="flex flex-col sm:flex-row gap-4 sm:space-x-2 text-lg w-full sm:w-auto mt-4">
-                <a href="#" class="w-full sm:w-auto"><button class="w-full border border-gray-500 text-white px-8 py-2 rounded-md hover:bg-gray-800 transition">About</button></a>
-                <button onclick="showDemo()" class="w-full sm:w-auto px-8 py-2 bg-white text-black rounded-md hover:bg-gray-200 transition cursor-pointer">Start Demo</button>
+            <div class="flex flex-col sm:flex-row gap-4 sm:space-x-4 text-lg w-full sm:w-auto mt-8">
+                <a href="#" class="w-full sm:w-auto"><button class="w-full border border-gray-600 text-white px-8 py-3 rounded-md hover:bg-gray-800 transition tracking-tight">About</button></a>
+                <button onclick="showDemo()" class="w-full sm:w-auto px-8 py-3 bg-white text-black font-medium rounded-md hover:bg-gray-200 transition cursor-pointer tracking-tight">Start Demo</button>
             </div>
 
         </section>
 
-        <section class="flex flex-col xl:flex-row items-center xl:items-start justify-center gap-12 border border-gray-800 p-8 md:px-20 md:py-12 w-full max-w-6xl">
+        <section class="flex flex-col xl:flex-row items-start justify-between gap-12 xl:gap-16 border border-gray-800 p-8 md:p-12 lg:p-16 w-full max-w-6xl">
             
-            <div id="profile-title" class="w-full text-left flex flex-col justify-center items-start gap-8 xl:w-1/3 xl:sticky xl:top-12">
-                <h2 class="text-white text-4xl md:text-5xl font-bold leading-tight">The People <br class="hidden xl:block"> in Charge</h2>
+            <div id="profile-title" class="w-full text-left flex flex-col justify-start items-start gap-6 xl:w-1/3 xl:sticky xl:top-12">
+                <h2 class="text-white text-4xl md:text-5xl font-bold tracking-tight leading-tight">The People <br class="hidden xl:block"> in Charge</h2>
                 
-                <p class="text-gray-300 text-lg leading-relaxed">"Great websites aren't built by a single mind, but by the seamless collaboration of a dedicated team."</p>
+                <p class="text-gray-400 text-lg leading-relaxed">"Great websites aren't built by a single mind, but by the seamless collaboration of a dedicated team."</p>
                 
-                <div class="w-full">
-                    <button class="bg-white text-black px-8 py-3 rounded-md hover:bg-gray-200 transition text-lg">Meet the Team</button>
-                    <p class="text-gray-600 mt-2 text-sm">*buttonnya cuman gimmick doang :></p>
+                <div class="w-full mt-4">
+                    <button class="bg-white text-black px-8 py-3 rounded-md font-medium hover:bg-gray-200 transition text-lg tracking-tight">Meet the Team</button>
+                    <p class="text-gray-600 mt-4 text-sm">*buttonnya cuman gimmick doang :></p>
                 </div>
             </div>
             
-            <div id="card-section" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full xl:w-2/3">
-                <div class="p-4 border border-gray-600 flex flex-col items-center sm:items-start hover:border-gray-400 transition duration-300">
-                    <img src="images/why-do-some-people-even-want-to-be-like-ayanokoji-v0-pyrpkeav3und1.webp" class="w-full aspect-[4/5] object-cover" alt="M. Hafiz">
-                    <h3 class="text-xl md:text-2xl font-bold text-white mt-4">M. Hafiz</h3>
-                    <p class="text-gray-400 mt-1">Project Manager</p>
+            <div id="card-section" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 w-full xl:w-2/3">
+    
+                <div class="relative aspect-square border border-dashed border-neutral-800 bg-black flex flex-col justify-end p-5 hover:border-neutral-500 transition-colors duration-300 overflow-hidden group">
+                    <img src="images/why-do-some-people-even-want-to-be-like-ayanokoji-v0-pyrpkeav3und1.webp" class="absolute inset-0 w-full h-full object-cover object-top grayscale contrast-125 brightness-90 group-hover:scale-105 transition-transform duration-700" alt="M. Hafiz">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent"></div>
+                    <div class="relative z-10 text-right w-full">
+                        <h3 class="text-sm md:text-base font-mono font-bold text-gray-200 tracking-widest uppercase">M. Hafiz</h3>
+                        <p class="text-xs font-mono text-neutral-500 tracking-wider mt-1 uppercase">Project Manager</p>
+                    </div>
                 </div>
 
-                <div class="p-4 border border-gray-600 flex flex-col items-center sm:items-start hover:border-gray-400 transition duration-300">
-                    <img src="images/why-do-some-people-even-want-to-be-like-ayanokoji-v0-pyrpkeav3und1.webp" class="w-full aspect-[4/5] object-cover" alt="Dzalfaga D.">
-                    <h3 class="text-xl md:text-2xl font-bold text-white mt-4">Dzalfaga D.</h3>
-                    <p class="text-gray-400 mt-1">UI/UX Designer</p>
+                <div class="relative aspect-square border border-dashed border-neutral-800 bg-black flex flex-col justify-end p-5 hover:border-neutral-500 transition-colors duration-300 overflow-hidden group">
+                    <img src="images/why-do-some-people-even-want-to-be-like-ayanokoji-v0-pyrpkeav3und1.webp" class="absolute inset-0 w-full h-full object-cover object-top grayscale contrast-125 brightness-90 group-hover:scale-105 transition-transform duration-700" alt="Dzalfaga D.">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent"></div>
+                    <div class="relative z-10 text-right w-full">
+                        <h3 class="text-sm md:text-base font-mono font-bold text-gray-200 tracking-widest uppercase">Dzalfaga D.</h3>
+                        <p class="text-xs font-mono text-neutral-500 tracking-wider mt-1 uppercase">UI/UX Designer</p>
+                    </div>
                 </div>
 
-                <div class="p-4 border border-gray-600 flex flex-col items-center sm:items-start hover:border-gray-400 transition duration-300">
-                    <img src="images/why-do-some-people-even-want-to-be-like-ayanokoji-v0-pyrpkeav3und1.webp" class="w-full aspect-[4/5] object-cover" alt="Nabil Hilmi">
-                    <h3 class="text-xl md:text-2xl font-bold text-white mt-4">Nabil Hilmi</h3>
-                    <p class="text-gray-400 mt-1">Front-end Developer</p>
+                <div class="relative aspect-square border border-dashed border-neutral-800 bg-black flex flex-col justify-end p-5 hover:border-neutral-500 transition-colors duration-300 overflow-hidden group">
+                    <img src="images/why-do-some-people-even-want-to-be-like-ayanokoji-v0-pyrpkeav3und1.webp" class="absolute inset-0 w-full h-full object-cover object-top grayscale contrast-125 brightness-90 group-hover:scale-105 transition-transform duration-700" alt="Nabil Hilmi">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent"></div>
+                    <div class="relative z-10 text-right w-full">
+                        <h3 class="text-sm md:text-base font-mono font-bold text-gray-200 tracking-widest uppercase">Nabil Hilmi</h3>
+                        <p class="text-xs font-mono text-neutral-500 tracking-wider mt-1 uppercase">Front-end Dev</p>
+                    </div>
                 </div>
                 
-                <div class="p-4 border border-gray-600 flex flex-col items-center sm:items-start hover:border-gray-400 transition duration-300">
-                    <img src="images/why-do-some-people-even-want-to-be-like-ayanokoji-v0-pyrpkeav3und1.webp" class="w-full aspect-[4/5] object-cover" alt="Haidar Z.">
-                    <h3 class="text-xl md:text-2xl font-bold text-white mt-4">Haidar Z.</h3>
-                    <p class="text-gray-400 mt-1">Back-end Developer</p>
+                <div class="relative aspect-square border border-dashed border-neutral-800 bg-black flex flex-col justify-end p-5 hover:border-neutral-500 transition-colors duration-300 overflow-hidden group">
+                    <img src="images/why-do-some-people-even-want-to-be-like-ayanokoji-v0-pyrpkeav3und1.webp" class="absolute inset-0 w-full h-full object-cover object-top grayscale contrast-125 brightness-90 group-hover:scale-105 transition-transform duration-700" alt="Haidar Z.">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent"></div>
+                    <div class="relative z-10 text-right w-full">
+                        <h3 class="text-sm md:text-base font-mono font-bold text-gray-200 tracking-widest uppercase">Haidar Z.</h3>
+                        <p class="text-xs font-mono text-neutral-500 tracking-wider mt-1 uppercase">Back-end Dev</p>
+                    </div>
                 </div>
 
-                <div class="p-4 border border-gray-600 flex flex-col items-center sm:items-start hover:border-gray-400 transition duration-300">
-                    <img src="images/why-do-some-people-even-want-to-be-like-ayanokoji-v0-pyrpkeav3und1.webp" class="w-full aspect-[4/5] object-cover" alt="Daffa U.">
-                    <h3 class="text-xl md:text-2xl font-bold text-white mt-4">Daffa U.</h3>
-                    <p class="text-gray-400 mt-1">Back-end Developer</p>
+                <div class="relative aspect-square border border-dashed border-neutral-800 bg-black flex flex-col justify-end p-5 hover:border-neutral-500 transition-colors duration-300 overflow-hidden group">
+                    <img src="images/why-do-some-people-even-want-to-be-like-ayanokoji-v0-pyrpkeav3und1.webp" class="absolute inset-0 w-full h-full object-cover object-top grayscale contrast-125 brightness-90 group-hover:scale-105 transition-transform duration-700" alt="Daffa U.">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent"></div>
+                    <div class="relative z-10 text-right w-full">
+                        <h3 class="text-sm md:text-base font-mono font-bold text-gray-200 tracking-widest uppercase">Daffa U.</h3>
+                        <p class="text-xs font-mono text-neutral-500 tracking-wider mt-1 uppercase">Back-end Dev</p>
+                    </div>
                 </div>
+
             </div>
 
         </section>
     </div>
 
-    <div id="demo-view" class="hidden w-full flex-col items-center transition-opacity duration-300">
+    <div id="demo-view" class="hidden w-full h-[100dvh] md:h-auto flex-col items-center transition-opacity duration-300">
         
-        <section class="flex flex-col items-center justify-center gap-8 border border-gray-800 p-8 md:px-20 md:py-16 w-full max-w-6xl relative">
+        <section class="flex flex-col items-center justify-center w-full h-full relative md:p-8 md:py-16 max-w-6xl">
             
-            <button onclick="hideDemo()" class="absolute top-6 left-6 md:top-8 md:left-8 text-gray-400 hover:text-white flex items-center gap-2 transition cursor-pointer">
+            <button onclick="hideDemo()" class="absolute top-4 left-4 md:top-8 md:left-8 text-gray-400 hover:text-white flex items-center gap-2 transition cursor-pointer font-medium tracking-tight z-50 bg-black/50 md:bg-transparent rounded-full px-3 py-1.5 md:p-0">
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
-                Back to Home
+                <span class="hidden md:inline">Back to Home</span>
             </button>
         
-            <div class="text-center w-full max-w-2xl mt-8 md:mt-0">
-                <h2 class="text-white text-3xl md:text-4xl font-bold mb-4">Live Interactive Demo</h2>
+            <div class="text-center w-full max-w-2xl hidden md:block mb-8">
+                <h2 class="text-white text-3xl md:text-4xl font-bold tracking-tight mb-4">Live Interactive Demo</h2>
                 <p class="text-gray-400 text-lg">Coba simulasi layanan USSD *858# langsung dari browser Anda.</p>
             </div>
 
-            <div class="border-4 border-gray-700 bg-gray-900 rounded-[3rem] p-4 w-full max-w-[350px] shadow-2xl relative overflow-hidden">
-                <div class="bg-black w-full h-[500px] rounded-[2rem] border border-gray-800 flex flex-col relative">
+            <div class="w-full h-full md:h-[840px] md:max-w-[390px] bg-white relative overflow-hidden flex flex-col md:border-4 md:border-neutral-100 md:rounded-[3.5rem] md:p-3 md:shadow-2xl">
+                <div class="w-full h-full bg-white flex flex-col relative overflow-hidden md:rounded-[3rem] md:border border-neutral-200">
                     
-                    <div class="flex justify-between items-center px-6 py-2 text-xs text-white font-medium">
+                    <div class="flex justify-between items-center px-6 md:px-8 py-3 md:py-4 text-xs text-neutral-900 font-medium z-10 shrink-0 bg-white">
                         <span>12:00</span>
                         <div class="flex space-x-2">
                             <span>LTE</span>
@@ -101,151 +119,158 @@
                         </div>
                     </div>
 
-                    <div id="ussd-dialog" class="hidden absolute inset-0 bg-black bg-opacity-80 flex items-center justify-center p-4 z-10">
-                        <div class="bg-gray-800 w-full rounded-lg p-4 shadow-lg border border-gray-600">
-                            <p id="ussd-text" class="text-white font-mono text-sm whitespace-pre-line mb-4 leading-relaxed"></p>
-                            <input type="text" id="ussd-input" class="w-full bg-black text-white border border-green-500 rounded p-2 mb-4 focus:outline-none focus:ring-1 focus:ring-green-500 font-mono" placeholder="Masukkan pilihan..." autocomplete="off">
-                            <div class="flex justify-end space-x-4 text-sm font-bold">
-                                <button onclick="closeUssd()" class="text-gray-400 hover:text-white transition cursor-pointer">CANCEL</button>
-                                <button onclick="handleUssdSubmit()" class="text-green-400 hover:text-green-300 transition cursor-pointer">SEND</button>
+                    <div class="flex-1 px-4 md:px-6 pt-2 pb-6 space-y-4 text-sm overflow-y-auto hide-scrollbar z-0 bg-white">
+                        <div class="flex justify-between items-center mb-6 px-2">
+                            <h2 class="text-3xl font-medium text-neutral-900 tracking-tight">Dialer</h2>
+                            <div class="flex gap-4 text-neutral-600">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"></path></svg>
+                            </div>
+                        </div>
+
+                        <div class="px-4 py-2 bg-neutral-100 rounded-xl mb-6 mx-2 flex items-center gap-3">
+                            <svg class="w-4 h-4 text-neutral-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                            <p class="text-neutral-400 font-medium">Search</p>
+                        </div>
+
+                        <p class="text-[11px] font-bold tracking-wider text-neutral-400 uppercase mb-2 px-2">One week ago</p>
+
+                        <div class="flex items-center justify-between mb-4 px-2">
+                            <div class="flex items-center gap-4">
+                                <div class="w-10 h-10 bg-neutral-200 rounded-full flex items-center justify-center text-neutral-400 shrink-0">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                                </div>
+                                <div>
+                                    <p class="text-[15px] font-medium text-red-600">188</p>
+                                    <p class="text-xs text-neutral-500">Missed <span class="mx-1">3/5</span> China Mobile</p>
+                                </div>
+                            </div>
+                            <svg class="w-4 h-4 text-neutral-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        </div>
+
+                        <p class="text-[11px] font-bold tracking-wider text-neutral-400 uppercase mt-6 mb-2 px-2">2025</p>
+
+                        <div class="flex items-center justify-between mb-4 px-2">
+                            <div class="flex items-center gap-4">
+                                <div class="w-10 h-10 bg-neutral-200 rounded-full flex items-center justify-center text-white shrink-0">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Globe_icon.svg" class="w-6 h-6 opacity-30" alt="globe">
+                                </div>
+                                <div>
+                                    <p class="text-[15px] font-medium text-red-600">+62 895-0020-09587</p>
+                                    <p class="text-xs text-neutral-500">Missed <span class="mx-1">11/12</span></p>
+                                </div>
+                            </div>
+                            <svg class="w-4 h-4 text-neutral-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        </div>
+                        
+                        <div class="flex items-center justify-between mb-4 px-2">
+                            <div class="flex items-center gap-4">
+                                <div class="w-10 h-10 bg-neutral-200 rounded-full flex items-center justify-center text-white shrink-0">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Globe_icon.svg" class="w-6 h-6 opacity-30" alt="globe">
+                                </div>
+                                <div>
+                                    <p class="text-[15px] font-medium text-red-600">+62 895-0020-09422</p>
+                                    <p class="text-xs text-neutral-500">Rejected <span class="mx-1">11/12</span></p>
+                                </div>
+                            </div>
+                            <svg class="w-4 h-4 text-neutral-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        </div>
+                    </div>
+
+                    <div id="loading-dialog" class="hidden absolute inset-0 bg-black/40 backdrop-blur-sm flex items-center justify-center p-4 z-40">
+                        <div class="bg-white rounded-[1.5rem] p-6 shadow-2xl flex flex-col items-center space-y-4 border border-neutral-300">
+                            <div class="w-8 h-8 border-4 border-neutral-300 border-t-neutral-900 rounded-full animate-spin"></div>
+                            <p class="text-neutral-900 font-medium text-sm">USSD code running...</p>
+                        </div>
+                    </div>
+
+                    <div id="ussd-dialog" class="hidden absolute inset-0 bg-black/40 backdrop-blur-sm items-center justify-center p-4 z-30">
+                        <div class="bg-white w-full max-w-[320px] rounded-[1.5rem] p-5 md:p-6 shadow-2xl border border-neutral-300">
+                            <p id="ussd-text" class="text-neutral-900 font-normal text-[14px] md:text-[15px] leading-snug whitespace-pre-line mb-4"></p>
+                            <input type="text" id="ussd-input" class="w-full bg-transparent text-neutral-900 border-0 border-b-[2px] border-neutral-300 focus:border-[#34a853] focus:ring-0 px-1 py-1 text-lg outline-none font-medium mb-2 transition-colors" autocomplete="off">
+                            <div class="flex justify-between px-2 md:px-6 mt-6">
+                                <button onclick="closeUssd()" class="text-neutral-900 font-bold text-sm tracking-wide active:text-neutral-500">CANCEL</button>
+                                <button onclick="handleUssdSubmit()" class="text-[#34a853] font-bold text-sm tracking-wide active:text-green-700">SEND</button>
                             </div>
                         </div>
                     </div>
 
-                    <div class="flex-1 flex flex-col items-center justify-end pb-8 px-8">
-                        <input type="text" id="dial-input" value="*858#" class="bg-transparent text-white text-4xl text-center w-full font-bold mb-12 focus:outline-none" readonly>
+                    <div id="dialer-main" class="shrink-0 w-full bg-white z-20 pt-2 pb-6 md:pb-8 flex flex-col items-center rounded-t-3xl shadow-[0_-10px_30px_-10px_rgba(0,0,0,0.08)]">
                         
-                        <button onclick="startUssd()" class="bg-green-500 hover:bg-green-600 transition text-white w-16 h-16 rounded-full flex items-center justify-center shadow-lg shadow-green-500/30 cursor-pointer">
-                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/></svg>
-                        </button>
+                        <div class="w-full flex justify-center items-center px-6 md:px-8 mb-2 md:mb-4 min-h-[50px] md:min-h-[60px]">
+                            <input type="text" id="dial-input" value="*858#" class="bg-transparent text-neutral-900 text-4xl md:text-[2.5rem] text-center w-full font-normal focus:outline-none tracking-tight" readonly>
+                        </div>
+                        
+                        <div class="grid grid-cols-3 gap-y-2 gap-x-8 md:gap-x-12 mb-4 w-full max-w-[280px]">
+                            <button class="flex flex-col items-center justify-center w-16 h-16 md:h-[4.5rem] md:w-full mx-auto rounded-full active:bg-neutral-100 transition" onclick="appendDial('1')">
+                                <span class="text-3xl md:text-[2.2rem] text-neutral-800 leading-none">1</span>
+                                <span class="text-[8px] md:text-[9px] text-neutral-400 mt-1 tracking-widest lowercase">oo</span>
+                            </button>
+                            <button class="flex flex-col items-center justify-center w-16 h-16 md:h-[4.5rem] md:w-full mx-auto rounded-full active:bg-neutral-100 transition" onclick="appendDial('2')">
+                                <span class="text-3xl md:text-[2.2rem] text-neutral-800 leading-none">2</span>
+                                <span class="text-[8px] md:text-[9px] text-neutral-400 mt-1 tracking-widest uppercase">abc</span>
+                            </button>
+                            <button class="flex flex-col items-center justify-center w-16 h-16 md:h-[4.5rem] md:w-full mx-auto rounded-full active:bg-neutral-100 transition" onclick="appendDial('3')">
+                                <span class="text-3xl md:text-[2.2rem] text-neutral-800 leading-none">3</span>
+                                <span class="text-[8px] md:text-[9px] text-neutral-400 mt-1 tracking-widest uppercase">def</span>
+                            </button>
+                            <button class="flex flex-col items-center justify-center w-16 h-16 md:h-[4.5rem] md:w-full mx-auto rounded-full active:bg-neutral-100 transition" onclick="appendDial('4')">
+                                <span class="text-3xl md:text-[2.2rem] text-neutral-800 leading-none">4</span>
+                                <span class="text-[8px] md:text-[9px] text-neutral-400 mt-1 tracking-widest uppercase">ghi</span>
+                            </button>
+                            <button class="flex flex-col items-center justify-center w-16 h-16 md:h-[4.5rem] md:w-full mx-auto rounded-full active:bg-neutral-100 transition" onclick="appendDial('5')">
+                                <span class="text-3xl md:text-[2.2rem] text-neutral-800 leading-none">5</span>
+                                <span class="text-[8px] md:text-[9px] text-neutral-400 mt-1 tracking-widest uppercase">jkl</span>
+                            </button>
+                            <button class="flex flex-col items-center justify-center w-16 h-16 md:h-[4.5rem] md:w-full mx-auto rounded-full active:bg-neutral-100 transition" onclick="appendDial('6')">
+                                <span class="text-3xl md:text-[2.2rem] text-neutral-800 leading-none">6</span>
+                                <span class="text-[8px] md:text-[9px] text-neutral-400 mt-1 tracking-widest uppercase">mno</span>
+                            </button>
+                            <button class="flex flex-col items-center justify-center w-16 h-16 md:h-[4.5rem] md:w-full mx-auto rounded-full active:bg-neutral-100 transition" onclick="appendDial('7')">
+                                <span class="text-3xl md:text-[2.2rem] text-neutral-800 leading-none">7</span>
+                                <span class="text-[8px] md:text-[9px] text-neutral-400 mt-1 tracking-widest uppercase">pqrs</span>
+                            </button>
+                            <button class="flex flex-col items-center justify-center w-16 h-16 md:h-[4.5rem] md:w-full mx-auto rounded-full active:bg-neutral-100 transition" onclick="appendDial('8')">
+                                <span class="text-3xl md:text-[2.2rem] text-neutral-800 leading-none">8</span>
+                                <span class="text-[8px] md:text-[9px] text-neutral-400 mt-1 tracking-widest uppercase">tuv</span>
+                            </button>
+                            <button class="flex flex-col items-center justify-center w-16 h-16 md:h-[4.5rem] md:w-full mx-auto rounded-full active:bg-neutral-100 transition" onclick="appendDial('9')">
+                                <span class="text-3xl md:text-[2.2rem] text-neutral-800 leading-none">9</span>
+                                <span class="text-[8px] md:text-[9px] text-neutral-400 mt-1 tracking-widest uppercase">wxyz</span>
+                            </button>
+                            <button class="flex flex-col items-center justify-center w-16 h-16 md:h-[4.5rem] md:w-full mx-auto rounded-full active:bg-neutral-100 transition" onclick="appendDial('*')">
+                                <span class="text-4xl md:text-[3rem] text-neutral-800 leading-none mt-2 md:mt-4 font-light">*</span>
+                                <span class="text-[8px] md:text-[9px] text-neutral-400 mt-0.5 tracking-widest">,</span>
+                            </button>
+                            <button class="flex flex-col items-center justify-center w-16 h-16 md:h-[4.5rem] md:w-full mx-auto rounded-full active:bg-neutral-100 transition" onclick="appendDial('0')">
+                                <span class="text-3xl md:text-[2.2rem] text-neutral-800 leading-none">0</span>
+                                <span class="text-[12px] md:text-[14px] text-neutral-400 mt-0 tracking-widest">+</span>
+                            </button>
+                            <button class="flex flex-col items-center justify-center w-16 h-16 md:h-[4.5rem] md:w-full mx-auto rounded-full active:bg-neutral-100 transition" onclick="appendDial('#')">
+                                <span class="text-3xl md:text-[2.2rem] text-neutral-800 leading-none mt-1 font-light">#</span>
+                                <span class="text-[10px] md:text-[12px] text-neutral-400 mt-0 tracking-widest">;</span>
+                            </button>
+                        </div>
+
+                        <div class="flex items-center justify-between w-full px-10 md:px-12 mt-2">
+                            <button class="p-3 rounded-full active:bg-neutral-100 transition text-neutral-600">
+                                <svg class="w-6 h-6 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            </button>
+
+                            <button onclick="startUssd()" class="bg-[#34a853] hover:bg-green-600 active:bg-green-700 transition text-white w-14 h-14 md:w-[4.5rem] md:h-[4.5rem] rounded-[1.25rem] md:rounded-[1.5rem] flex items-center justify-center cursor-pointer shadow-sm">
+                                <svg class="w-7 h-7 md:w-8 md:h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/></svg>
+                            </button>
+
+                            <button class="p-3 rounded-full active:bg-neutral-100 transition text-neutral-600" onclick="deleteDial()">
+                                <svg class="w-6 h-6 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2M3 12l6.414 6.414a2 2 0 001.414.586H19a2 2 0 002-2V7a2 2 0 00-2-2h-8.172a2 2 0 00-1.414.586L3 12z"></path></svg>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     </div>
-
-<script>
-    // logic hide dan show wew
-    const mainView = document.getElementById('main-view');
-    const demoView = document.getElementById('demo-view');
-
-    function showDemo() {
-        // hide main
-        mainView.classList.add('hidden');
-        mainView.classList.remove('flex');
-        
-        // show demo
-        demoView.classList.remove('hidden');
-        demoView.classList.add('flex');
-        
-        // reset scroll psoition
-        window.scrollTo(0, 0);
-    }
-
-    function hideDemo() {
-        // hide demo
-        demoView.classList.add('hidden');
-        demoView.classList.remove('flex');
-        
-        // show main
-        mainView.classList.remove('hidden');
-        mainView.classList.add('flex');
-        
-        // reset simulator kalau gajadi tengah jalan
-        closeUssd();
-        window.scrollTo(0, 0);
-    }
-
-    // ussd main logic wakwaw
-    let ussdState = 0;
-    let transferData = { number: '', amount: '' };
-
-    const dialog = document.getElementById('ussd-dialog');
-    const ussdText = document.getElementById('ussd-text');
-    const ussdInput = document.getElementById('ussd-input');
-    const dialInput = document.getElementById('dial-input');
-
-    function startUssd() {
-        if(dialInput.value === '*858#') {
-            dialog.classList.remove('hidden');
-            ussdState = 1;
-            renderMenu();
-        } else {
-            alert('Silakan ketik *858# untuk memulai simulasi.');
-        }
-    }
-
-    function closeUssd() {
-        dialog.classList.add('hidden');
-        ussdInput.value = '';
-        ussdState = 0;
-        transferData = { number: '', amount: '' };
-        ussdInput.style.display = 'block'; // reset displaynya bisi bermasalah
-    }
-
-    function renderMenu() {
-        ussdInput.value = '';
-        ussdInput.focus();
-        
-        switch(ussdState) {
-            case 1:
-                ussdText.innerText = "Mau Transfer Pulsa?\n1. Transfer Pulsa\n2. Minta Pulsa\n3. Auto TP\n4. Delete Auto TP\n5. Cek Status";
-                ussdInput.style.display = 'block';
-                break;
-            case 2:
-                ussdText.innerText = "Silahkan masukkan nomor tujuan Transfer Pulsa:\n(contoh: 081234567890)";
-                break;
-            case 3:
-                ussdText.innerText = "Silahkan masukkan jumlah pulsa yang akan ditransfer:\n(min 5000, max 1000000)";
-                break;
-            case 4:
-                ussdText.innerText = `Hati-hati penipuan! Anda akan transfer pulsa Rp${transferData.amount} ke ${transferData.number}?\nBiaya mulai Rp1.850 & +1 Poin.\n1. Ya\n9. Back`;
-                break;
-            case 5:
-                ussdText.innerText = "Terima kasih permintaan Anda sedang diproses. Tunggu SMS notifikasi selanjutnya.";
-                ussdInput.style.display = 'none'; // kalo sukses sembunyiin input
-                break;
-            default:
-                ussdText.innerText = "Kode MMI Tidak Berlaku.";
-        }
-    }
-
-    function handleUssdSubmit() {
-        const input = ussdInput.value.trim();
-
-        if (ussdState === 1 && input === '1') {
-            ussdState = 2;
-        } else if (ussdState === 2 && input.length >= 10) {
-            transferData.number = input;
-            ussdState = 3;
-        } else if (ussdState === 3 && parseInt(input) >= 5000) {
-            transferData.amount = input;
-            ussdState = 4;
-        } else if (ussdState === 4 && input === '1') {
-            ussdState = 5;
-        } else if (ussdState === 4 && input === '9') {
-            ussdState = 1; // balik ke main menu yeee
-        } else if (ussdState === 5) {
-            closeUssd();
-            return;
-        } else {
-            ussdText.innerText = "Input salah atau format tidak sesuai. Menghentikan sesi.";
-            ussdInput.style.display = 'none';
-            setTimeout(closeUssd, 2500);
-            return;
-        }
-        
-        renderMenu();
-    }
-
-    // ini submit woi
-    ussdInput.addEventListener("keypress", function(event) {
-        if (event.key === "Enter") {
-            event.preventDefault();
-            handleUssdSubmit();
-        }
-    });
-</script>
+<script src="index.js"></script>
     
 </body>
 </html>
