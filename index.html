@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Analisis Layanan *858#</title>
+    <title>Analisis Layanan *363#</title>
     <script src="https://cdn.tailwindcss.com"></script>
     
     <link rel="stylesheet" href="index.css">
@@ -14,7 +14,7 @@
         <section class="flex flex-col justify-center items-center space-y-8 border border-gray-800 p-8 md:px-24 md:py-32 w-full max-w-6xl">
             
             <div class="text-center w-full max-w-5xl">
-                <h1 class="text-5xl md:text-7xl font-bold tracking-tighter text-white">Analisis Layanan *858#</h1>
+                <h1 class="text-5xl md:text-7xl font-bold tracking-tighter text-white">Analisis Layanan *363#</h1>
                 <p class="text-xl md:text-2xl mt-4 tracking-tight text-gray-400">by Hapis Supremacy</p>
             </div>
 
@@ -105,7 +105,7 @@
         
             <div class="text-center w-full max-w-2xl hidden md:block mb-8">
                 <h2 class="text-white text-3xl md:text-4xl font-bold tracking-tight mb-4">Live Interactive Demo</h2>
-                <p class="text-gray-400 text-lg">Coba simulasi layanan USSD *858# langsung dari browser Anda.</p>
+                <p class="text-gray-400 text-lg">Coba simulasi layanan USSD *363# langsung dari browser Anda.</p>
             </div>
 
             <div class="w-full h-full md:h-[840px] md:max-w-[390px] bg-white relative overflow-hidden flex flex-col md:border-4 md:border-neutral-100 md:rounded-[3.5rem] md:p-3 md:shadow-2xl">
@@ -188,9 +188,14 @@
                         <div class="bg-white w-full max-w-[320px] rounded-[1.5rem] p-5 md:p-6 shadow-2xl border border-neutral-300">
                             <p id="ussd-text" class="text-neutral-900 font-normal text-[14px] md:text-[15px] leading-snug whitespace-pre-line mb-4"></p>
                             <input type="text" id="ussd-input" class="w-full bg-transparent text-neutral-900 border-0 border-b-[2px] border-neutral-300 focus:border-[#34a853] focus:ring-0 px-1 py-1 text-lg outline-none font-medium mb-2 transition-colors" autocomplete="off">
-                            <div class="flex justify-between px-2 md:px-6 mt-6">
+                            
+                            <div id="btn-normal" class="flex justify-between px-2 md:px-6 mt-6">
                                 <button onclick="closeUssd()" class="text-neutral-900 font-bold text-sm tracking-wide active:text-neutral-500">CANCEL</button>
                                 <button onclick="handleUssdSubmit()" class="text-[#34a853] font-bold text-sm tracking-wide active:text-green-700">SEND</button>
+                            </div>
+
+                            <div id="btn-end" class="hidden justify-end px-2 md:px-6 mt-6">
+                                <button onclick="closeUssd()" class="text-[#34a853] font-bold text-sm tracking-wide active:text-green-700">OK</button>
                             </div>
                         </div>
                     </div>
@@ -198,7 +203,7 @@
                     <div id="dialer-main" class="shrink-0 w-full bg-white z-20 pt-2 pb-6 md:pb-8 flex flex-col items-center rounded-t-3xl shadow-[0_-10px_30px_-10px_rgba(0,0,0,0.08)]">
                         
                         <div class="w-full flex justify-center items-center px-6 md:px-8 mb-2 md:mb-4 min-h-[50px] md:min-h-[60px]">
-                            <input type="text" id="dial-input" value="*858#" class="bg-transparent text-neutral-900 text-4xl md:text-[2.5rem] text-center w-full font-normal focus:outline-none tracking-tight" readonly>
+                            <input type="text" id="dial-input" value="*363#" class="bg-transparent text-neutral-900 text-4xl md:text-[2.5rem] text-center w-full font-normal focus:outline-none tracking-tight" readonly>
                         </div>
                         
                         <div class="grid grid-cols-3 gap-y-2 gap-x-8 md:gap-x-12 mb-4 w-full max-w-[280px]">
@@ -270,7 +275,7 @@
             </div>
         </section>
     </div>
-<script src="index.js"></script>
+<script src="index2.js"></script>
     
 </body>
 </html>
