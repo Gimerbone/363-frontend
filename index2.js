@@ -33,9 +33,6 @@ function deleteDial() {
     dialInput.value = dialInput.value.slice(0, -1);
 }
 
-// ==========================================
-// WEBSOCKET CLIENT IMPLEMENTATION
-// ==========================================
 let ws = null;
 const dialog = document.getElementById('ussd-dialog');
 const loader = document.getElementById('loading-dialog');
@@ -60,16 +57,13 @@ function startUssd() {
 }
 
 function initWebSocket() {
-    // Terhubung ke mock server lokal di port 8080
     ws = new WebSocket('ws://localhost:8080/api/v1/ussd');
 
     ws.onopen = () => {
-        // Mengirim trigger awal untuk mendapatkan menu utama
         ws.send(JSON.stringify({ option: 0 }));
     };
 
     ws.onmessage = (event) => {
-        // Menerima data dari server
         const response = JSON.parse(event.data);
         renderWsMenu(response);
     };
@@ -159,7 +153,6 @@ function handleUssdSubmit() {
     showLoaderUI();
 
     if (ws && ws.readyState === WebSocket.OPEN) {
-        // Mengirim pilihan user ke server
         ws.send(JSON.stringify({ option: parseInt(input, 10) }));
     } else {
         closeUssd();

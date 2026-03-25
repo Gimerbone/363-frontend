@@ -2,7 +2,7 @@ const WebSocket = require('ws');
 
 const wss = new WebSocket.Server({ port: 8080, path: '/api/v1/ussd' });
 
-console.log('🚀 Mock Server USSD berjalan di ws://localhost:8080/api/v1/ussd');
+console.log('Mock Server USSD berjalan di ws://localhost:8080/api/v1/ussd');
 
 wss.on('connection', (ws) => {
     console.log('Client connected!');
