@@ -38,8 +38,9 @@ npm install ws
 node server.js
 
 Server akan berjalan dan mendengarkan koneksi di ws://localhost:8080/api/v1/ussd.
+```
 2. Menjalankan Front-end (Client)
-
+```bash
     Buka file index.html langsung melalui browser Anda.
 
     Atau (Disarankan) gunakan ekstensi seperti Live Server di VS Code agar lebih optimal.
@@ -77,7 +78,7 @@ JSON
     menu: Array berisi daftar opsi paket yang bisa dipilih.
 
     end: Bernilai true jika sesi USSD telah selesai (misal: setelah berhasil membeli paket), yang akan memicu penutupan dialog dan koneksi.
-
+```
 📄 Lisensi
 
 Hak Cipta © 2026 - Tugas Implementasi dan Pengujian Perangkat Lunak.
