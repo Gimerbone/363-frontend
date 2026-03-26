@@ -6,6 +6,9 @@ const dialerMain = document.getElementById('dialer-main');
 const btnNormal  = document.getElementById('btn-normal');
 const btnEnd     = document.getElementById('btn-end');
 
+const host = import.meta.env.VITE_BACKEND_HOST;
+const port = import.meta.env.VITE_BACKEND_PORT;
+
 let ws = null;
 
 // ─── UI Helpers ───────────────────────────────────────────────────────────────
@@ -44,11 +47,11 @@ function setInputState() {
 // ─── WebSocket ────────────────────────────────────────────────────────────────
 
 function initWebSocket() {
-    ws = new WebSocket('ws://localhost:8080/api/v1/ussd');
+    ws = new WebSocket(`ws://${host}:${port}/api/v1/ussd`);
 
-    ws.onopen = () => {
-        ws.send(JSON.stringify({ option: 0 }));
-    };
+    // ws.onopen = () => {
+    //     ws.send(JSON.stringify({ option: 0 }));
+    // };
 
     ws.onmessage = (event) => {
         const response = JSON.parse(event.data);
