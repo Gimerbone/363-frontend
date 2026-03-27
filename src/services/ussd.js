@@ -45,10 +45,19 @@ function setInputState() {
 }
 
 // ─── WebSocket ────────────────────────────────────────────────────────────────
+function getWsAddress(type) {
+    if (type === "prod") {
+        return `wss://${host}/api/v1/ussd`;
+    }
+    else {
+        return `ws://${host}:${port}/api/v1/ussd`;
+    }
+}
 
 function initWebSocket() {
-    ws = new WebSocket(`ws://${host}:${port}/api/v1/ussd`);
+    ws = new WebSocket(getWsAddress("prod"));
 
+    // This causes break thus should not be called unless modified
     // ws.onopen = () => {
     //     ws.send(JSON.stringify({ option: 0 }));
     // };
